@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Define el tipo de documento y el idioma -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>TEC NEWS</title>
+    <!-- Enlace a la hoja de estilos de Font Awesome -->
+    <link rel="stylesheet" href="Estilos/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Estilos CSS integrados -->
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="#" class="enlace">TECNEWS</a>
+        <!-- Icono del menú -->
+        <div class="menu-icon"><i class="fas fa-bars"></i></div>
+        <!-- Lista de navegación -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="reseñas.html">Reseñas</a></li>
+            <li><a href="tutoriales.html">Tutoriales</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Contenido principal -->
+        <section>
+            <h1>Videos Tutoriales de Tecnología</h1>
+            <div class="video-container">
+                <!-- Primer video -->
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rj7YDLwWY6A?si=KEswVPyGSoB2diz3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Tutorial de instalacion de Windows11.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <p>Ubicación: Cd. Valles</p>
+        <p>Redes Sociales:
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://mail.google.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // JavaScript para alternar la visualización del menú de navegación en dispositivos móviles
+        const menuIcon = document.querySelector('.menu-icon');
+        const navUl = document.querySelector('nav ul');
+
+        menuIcon.addEventListener('click', () => {
+            navUl.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>

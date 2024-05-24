@@ -1,0 +1,284 @@
+/* Definición de variables de color */
+:root {
+    --color-background: #001462;
+    --color-text: #ced1ff;
+    --color-highlight: #000d48;
+}
+/* Estilos para el encabezado */
+header {
+    width: calc(center); /* Ancho completo */
+    overflow: hidden; /* Evita que la imagen se desborde */
+}
+
+/* Estilos para la imagen de encabezado */
+header img {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Para centrar la imagen */
+    margin-top: auto; /* Margen superior para dejar espacio para la barra de navegación */
+}
+
+
+
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Para que la imagen de fondo no se desplace con el contenido */
+    margin: 0;
+    /* Elimina el margen predeterminado del body */
+    background-color: var(--color-background);
+    color: var(--color-text);
+    min-height: 100vh;
+    /* Establece la altura mínima del cuerpo al 100% del viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado {
+    background-image: url('imagenes/portada.png');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el encabezado */
+    background-position: center; /* Centra la imagen */
+    height: 300px; /* Altura del encabezado */
+    text-align: center; /* Centra el texto horizontalmente */
+    color: rgb(255, 255, 255); /* Color del texto */
+    padding-top: 40px; /* Reducción del espacio superior para permitir que el título se desplace hacia abajo */
+    position: relative; /* Establece el posicionamiento relativo */
+}
+
+.titulo {
+    font-size: 36px; /* Tamaño del texto del título */
+    margin: 0; /* Elimina el margen predeterminado del encabezado */
+}
+
+.encabezado h1 {
+    position: absolute; /* Establece el posicionamiento absoluto */
+    bottom: -90px; /* Ajusta la distancia del texto desde la parte inferior del encabezado */
+    left: 0; /* Alinea el texto a la izquierda */
+    right: 0; /* Alinea el texto a la derecha */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: rgba(19, 19, 21, 0.8);
+    /* Fondo semi-transparente */
+    color: #f5f7ff;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para los elementos de la lista de navegación */
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f7ff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3c60fc;
+}
+
+.enlace {
+    text-decoration: none;
+    color: #f5f7ff;
+    margin-right: auto;
+    /* Empuja el logo hacia la izquierda */
+}
+
+.logo {
+    width: 100px;
+    display: block;
+}
+
+/* Estilos para la sección principal */
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Hace que la sección principal ocupe todo el espacio disponible */
+}
+.titulo {
+    font-size: 36px; /* Tamaño del texto del título */
+    margin: 90px auto; /* Margen superior e inferior de 90px y márgenes laterales automáticos */
+    text-align: center; /* Centra el texto */
+}
+
+h2 {
+    color: #ffffff;
+    border: 5px solid #000000; /* Grosor y color del borde */
+    padding: 20px; /* Espacio interno alrededor del texto */
+}
+
+
+main section {
+    padding: 50px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main section h1 {
+    color: #97aafd;
+    margin-top: 20px;
+}
+
+main section p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.containerProduct {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+.container {
+    font-size: 100%;
+    width: calc(33.33% - 20px); /* Ajusta el ancho de cada contenedor */
+    margin-bottom: 10px; /* Espacio entre los contenedores */
+    text-align: center;
+    border: 5px solid #000000;
+    padding: 20px;
+    background-color: #5d4dd7a9;
+    box-sizing: border-box; /* Para que el padding y el borde no afecten el ancho total */
+}
+
+
+.container img {
+    max-width: 90%;
+    height: auto;
+}
+
+.text-box {
+    flex: 1;
+}
+
+.text-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.text-box button {
+    padding: 10px 20px;
+    background-color: #009737;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.text-box button:hover {
+    background-color: #3b479e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #3c60fc;
+}
+
+/* Media query para mostrar el menú en dispositivos con resolución de tablet o teléfono */
+@media screen and (min-width: 769px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Mostrar la lista de navegación cuando la clase show está presente */
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(19, 19, 21, 0.95);
+        z-index: 1000;
+    }
+
+    nav ul.show li {
+        margin-right: 0;
+        padding: 20px;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.show li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul.show li a {
+        color: #f5f7ff;
+        transition: color 0.3s ease;
+    }
+
+    nav ul.show li a:hover {
+        color: #3c60fc;
+    }
+}
+
+
+

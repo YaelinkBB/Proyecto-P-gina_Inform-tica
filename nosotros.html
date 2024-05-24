@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Define el tipo de documento y el idioma -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>TEC NEWS</title>
+    <!-- Enlace a la hoja de estilos de Font Awesome -->
+    <link rel="stylesheet" href="Estilos/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Estilos CSS integrados -->
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="#" class="enlace">TECNEWS</a>
+        <!-- Icono del menú -->
+        <div class="menu-icon"><i class="fas fa-bars"></i></div>
+        <!-- Lista de navegación -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="reseñas.html">Reseñas</a></li>
+            <li><a href="tutoriales.html">Tutoriales</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+    </nav>
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <h1>Bienvenido a la Vanguardia Tecnológica de 2024</h1>
+            <p>En TEC NEWS nos dedicamos a proporcionar las últimas noticias y actualizaciones en el mundo de la tecnología.
+                Nuestro objetivo es mantenerlo informado sobre los avances más recientes, los lanzamientos de productos y las
+                tendencias emergentes en el campo de la tecnología.</p>
+            <p>La fiabilidad es nuestra máxima prioridad. Trabajamos arduamente para garantizar que nuestras noticias sean
+                precisas y confiables. Nuestro equipo de expertos en tecnología se esfuerza por ofrecer contenido
+                informativo y objetivo para que pueda tomar decisiones informadas sobre las últimas innovaciones y
+                desarrollos en el mundo digital.</p>
+            <p>Ya sea que esté interesado en dispositivos móviles, inteligencia artificial, Internet de las cosas,
+                ciberseguridad o cualquier otro aspecto de la tecnología moderna, encontrará información relevante y útil en
+                TEC NEWS.</p>
+                       <!-- Mapa incrustado -->
+                       <div style="position: relative; overflow: hidden; width: 100%; max-width: 800px; padding-top: 56.25%;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d71418.32926638352!2d-99.06321569398078!3d21.986358341325115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1714710697583!5m2!1ses-419!2smx"
+                            style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <p>Ubicación: Cd. Valles</p>
+        <p>Redes Sociales:
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://mail.google.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // JavaScript para alternar la visualización del menú de navegación en dispositivos móviles
+        const menuIcon = document.querySelector('.menu-icon');
+        const navUl = document.querySelector('nav ul');
+
+        menuIcon.addEventListener('click', () => {
+            navUl.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
